@@ -7,3 +7,6 @@ def simple(request):
 
 def forms(request):
     return render(request, 'something/forms.html')
+
+def home(request):
+    return render(request, 'something/home.html')
