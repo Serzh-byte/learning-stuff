@@ -10,3 +10,9 @@ def forms(request):
 
 def home(request):
     return render(request, 'something/home.html')
+
+def name(request):
+    if request.method == 'POST':
+        name = request.POST.get('name')  # Get the name from the form data
+        return render(request, 'something/name.html', {'name': name})
+    return render(request, 'something/name.html',)  # Handle GET request (if needed)
