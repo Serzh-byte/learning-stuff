@@ -1,9 +1,13 @@
 <!DOCTYPE html>
+{% load static %}
 <html>
+    <link rel="stylesheet" href="{% static 'css/name.css' %}">
     <head>
         <title>Hello {{ name }}</title>
     </head>
     <body>
-        <h1>Welcome {{ name }}</h1>
+        <div id="welcome">
+            <h1>Welcome {{ name }}</h1>
+        </div>
     </body>
 </html>

@@ -8,6 +8,7 @@ body, html {
     display: flex; /* Enable flexbox on the body */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
+    background-color:burlywood;
 }
 
 #input-fields {
@@ -15,12 +16,17 @@ body, html {
     padding: 20px; /* Add some padding inside */
     width: fit-content; /* Automatically adjust width based on content */
     height: fit-content; /* Automatically adjust height based on content */
+    border: 2px solid black;
+    padding-top: 10px;    /* Top padding */
+    padding-right: 15px;  /* Right padding */
+    padding-bottom: 20px; /* Bottom padding */
+    padding-left: 25px;   /* Left padding */
+    border-radius: 15px; /* makes the border round */
 }
+
 #lab {
     font-weight: bolder;
 }
-
-/* ask about display and padding */
 
 #header {
     text-align: center;
