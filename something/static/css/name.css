@@ -10,9 +10,12 @@ body, html {
 
 #welcome {
     border: 2px solid black;
+    padding: 20px;
+    margin: auto;
 }
 
 #paragraph {
     border: 2px solid black;
-    display: flex;
+    padding: 20px;
+    margin: auto;
 }
