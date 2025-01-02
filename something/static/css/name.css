@@ -1,9 +1,18 @@
 body, html {
-    height: 100%; /* Ensure the body takes up the full height of the viewport */
+    height: 100%;
     margin-bottom: 300px;
-    display: flex; /* Enable flexbox on the body */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+#welcome {
+    border: 2px solid black;
+}
+
+#paragraph {
+    border: 2px solid black;
+    display: flex;
+}
