@@ -18,3 +18,9 @@ def name(request):
         name = request.POST.get('name')  # Get the name from the form data
         return render(request, 'something/name.html', {'name': name})
     return render(request, 'something/name.html',)  # Handle GET request (if needed)
+
+def main(request):
+    if request.method == 'POST':
+        return render(request, 'something/main.html')
+    return render(request, 'something/main.html')
+    
