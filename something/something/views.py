@@ -9,6 +9,8 @@ def forms(request):
     return render(request, 'something/forms.html')
 
 def home(request):
+    if request.method == 'POST':
+        return render(request, 'something/home.html')
     return render(request, 'something/home.html')
 
 def name(request):

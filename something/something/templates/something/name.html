@@ -13,7 +13,11 @@
             <p>This is a paragraph because {{name}} doesnt know what to do</p>
         </div>
         <div id="go back">
-            <button></button>
+            <form action="{% url 'home' %}" class="forms" method="POST">
+                {% csrf_token %}
+                <label for="back">Go Back</label>
+                <input type="submit" id="back" value="Go Back">
+            </form>
         </div>
     </body>
 </html>
