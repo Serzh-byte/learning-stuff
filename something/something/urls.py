@@ -24,5 +24,5 @@ urlpatterns = [
     path('forms/', views.forms, name='forms'),
     path('home/', views.home, name='home'),
     path('name/', views.name, name='name'),
-    path('', views.main, name='main'),
+    path('bt1/', views.bt1, name='main'),
 ]

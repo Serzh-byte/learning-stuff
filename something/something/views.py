@@ -21,6 +21,6 @@ def name(request):
 
 def main(request):
     if request.method == 'POST':
-        return render(request, 'something/main.html')
-    return render(request, 'something/main.html')
+        return render(request, 'something/bt1.html')
+    return render(request, 'something/bt1.html')
     
