@@ -29,3 +29,7 @@ def bt2(request):
         return render(request, 'something/bt2.html')
     return render(request, 'something/bt2.html')
 
+def all(request):
+    if request.method == 'POST':
+        return render(request, 'something/all.html')
+    return render(request, 'something/all.html')

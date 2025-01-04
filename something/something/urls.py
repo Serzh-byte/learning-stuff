@@ -26,4 +26,5 @@ urlpatterns = [
     path('name/', views.name, name='name'),
     path('bt1/', views.bt1, name='bt1'),
     path('bt2/', views.bt2, name='bt2'),
+    path('', views.all, name='all'),
 ]
