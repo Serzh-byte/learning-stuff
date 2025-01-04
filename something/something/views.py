@@ -33,3 +33,13 @@ def all(request):
     if request.method == 'POST':
         return render(request, 'something/all.html')
     return render(request, 'something/all.html')
+
+def cards(request):
+    if request.method == 'POST':
+        return render(request, 'something/cards.html')
+    return render(request, 'something/cards.html')
+
+def navbar(request):
+    if request.method == 'POST':
+        return render(request, 'something/navbar.html')
+    return render(request, 'something/navbar.html')
