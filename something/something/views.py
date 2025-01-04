@@ -19,7 +19,7 @@ def name(request):
         return render(request, 'something/name.html', {'name': name})
     return render(request, 'something/name.html',)  # Handle GET request (if needed)
 
-def main(request):
+def bt1(request):
     if request.method == 'POST':
         return render(request, 'something/bt1.html')
     return render(request, 'something/bt1.html')
