@@ -24,3 +24,8 @@ def bt1(request):
         return render(request, 'something/bt1.html')
     return render(request, 'something/bt1.html')
     
+def bt2(request):
+    if request.method == 'POST':
+        return render(request, 'something/bt2.html')
+    return render(request, 'something/bt2.html')
+
