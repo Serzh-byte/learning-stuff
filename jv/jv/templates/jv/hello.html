@@ -2,14 +2,14 @@
 <html>
     <head>
         <script>
-            function hello() {
-                const heading = document.querySelector('h1');
-                if (heading.innerHTML === 'Hello!'){
-                    heading.innerHTML= 'Goodbye';
-                } else {
-                    heading.innerHTML = 'Hello!';
-                }
-            }
+            document.addEventListener("DOMContentLoaded", function() {
+
+                document.querySelector('form').onsubmit = function(){
+                    const name = document.querySelector('#name').value;
+                    alert(`Hello ${name}!`);
+                };
+
+            });
         </script>
         <!--document.querySelector is used to look through the html, find a specific html element and manipulate it-->
         <!--const means that heading WILL NEVER AGAIN BE CHANGED-->
@@ -19,7 +19,10 @@
     </head>
     <body>
         <h1>Hello!</h1>
-        <button onclick="hello()"> Click Here </button>
+        <form>
+            <input autofocus id="name" placeholder="Name" type="text">
+            <input type="submit">
+        </form>
         <!--onclick runs the function-->
     </body>
 </html>
