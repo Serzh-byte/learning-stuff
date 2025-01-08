@@ -5,13 +5,24 @@
         <script>
             document.addEventListener("DOMContentLoaded", function(){
                 
+                // change font color to red
+                document.querySelector('#red').onclick = function(){
+                    document.querySelector('#hello').style.color = 'red';
+                    // to access a css property use .style.the-css-property
+                };
+                document.querySelector('#blue').onclick = function(){
+                    document.querySelector('#hello').style.color = 'blue';
+                };
+                document.querySelector('#green').onclick = function(){
+                    document.querySelector('#hello').style.color = 'green';
+                };
             });
         </script>
     </head>
     <body>
-        <h1 id="Hello">Hello!</h1>
-        <button id="red">Red</button>
-        <button id="blue">Blue</button>
-        <button id="green">Green</button>
+        <h1 id="hello">Hello!</h1>
+        <button data-color="red">Red</button>
+        <button data-color="blue">Blue</button>
+        <button dara-color="green">Green</button>
     </body>
 </html>
