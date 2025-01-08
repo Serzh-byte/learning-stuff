@@ -5,16 +5,28 @@
         <script>
 
             let counter = 0;
+            // creates a variable
             function count(){
                 counter ++;
-                alert(counter);
-            }
+                document.querySelector('h1').innerHTML = counter;
 
+                if (counter % 10 === 0) {
+                    alert(`Counter is ${counter}`)
+                    // ` ` acts as the f'' in python ${} is used for {} in python
+                }
+            }
+            
+            document.addEventListener('DOMContentLoaded', function() {
+                
+            });
+            // DOMcontentloaded runs the script only after the whole document is loaded
+            document.querySelector('button').onclick = count;
+            // this line will assign the counter function to the onclick property of the button
         </script>
     </head>
     <body>
-        <h1>Hello!</h1>
-        <button onclick="count()"> Count </button>
+        <h1>0</h1>
+        <button> Count </button>
         <!--onclick runs the function-->
     </body>
 </html>
