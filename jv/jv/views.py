@@ -10,3 +10,8 @@ def counter(request):
     if request.method == 'POST':
         return render(request, 'jv/counter.html')
     return render(request, 'jv/counter.html')
+
+def colors(request):
+    if request.method == 'POST':
+        return render(request, 'jv/colors.html')
+    return render(request, 'jv/colors.html')
